@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 6da7e7af190f5754cbc18ef2ec3374a6
+timeCreated: 1439287832
+licenseType: Free
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: shaders/scene/scene.ga
+  assetBundleVariant: 

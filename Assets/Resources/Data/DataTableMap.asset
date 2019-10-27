@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66add7b62fdd3c449966a13e8dff875d, type: 3}
+  m_Name: DataTableMap
+  m_EditorClassIdentifier: 
+  DataList:
+  - map_id: 1001
+    mapType: 1
+    fbType: 0
+    name: "\u6D1B\u9633\u57CE"
+    mapResId: 1001
+    musicBg: luoyangBg.mp3
+    mapDesc: "\u7687\u57CE"
+    mapIcon: 
+    mapPKModel: 0
+    openLv: 0
+    reliveType: 0
+  - map_id: 1002
+    mapType: 2
+    fbType: 0
+    name: "\u4E16\u5916\u6843\u6E90"
+    mapResId: 1002
+    musicBg: test1.mp3
+    mapDesc: "\u4E16\u5916\u6843\u6E90"
+    mapIcon: 
+    mapPKModel: 0
+    openLv: 0
+    reliveType: 0
+  - map_id: 1003
+    mapType: 2
+    fbType: 0
+    name: "\u8352\u91CE"
+    mapResId: 1003
+    musicBg: test2.mp3
+    mapDesc: "\u4E16\u5916\u6843\u6E90"
+    mapIcon: 
+    mapPKModel: 0
+    openLv: 0
+    reliveType: 0
+  - map_id: 1004
+    mapType: 1
+    fbType: 0
+    name: "\u7126\u9633\u57CE"
+    mapResId: 1004
+    musicBg: test3.mp3
+    mapDesc: "\u4E16\u5916\u6843\u6E90"
+    mapIcon: 
+    mapPKModel: 0
+    openLv: 0
+    reliveType: 0

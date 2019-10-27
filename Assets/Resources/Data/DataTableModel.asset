@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 673be47cb18498c41b40cfdf7af1e914, type: 3}
+  m_Name: DataTableModel
+  m_EditorClassIdentifier: 
+  DataList:
+  - id: 4000
+    name: "\u7537\u89D2\u82721"
+    path: Assets/Resources/Actor/Player/4000.prefab
+  - id: 5000
+    name: "\u51E4\u513F"
+    path: Assets/Resources/Actor/NPC/5000.prefab
+  - id: 50000
+    name: "\u86C7\u5996"
+    path: Assets/Resources/Actor/Monster/50000.prefab
+  - id: 6000
+    name: "\u4F20\u9001\u9635"
+    path: Assets/Resources/Effect/Prefabs/6000.prefab

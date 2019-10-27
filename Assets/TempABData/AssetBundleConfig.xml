@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AssetBundleConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ABList Path="Assets/Resources/Data/DataTableUi.asset" Crc="559885824" ABName="data/datatableui" AssetName="DataTableUi.asset" />
+</AssetBundleConfig>

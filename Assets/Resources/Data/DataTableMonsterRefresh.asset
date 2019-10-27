@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b0649c18dd0862448ceecc3b3f4de2d, type: 3}
+  m_Name: DataTableMonsterRefresh
+  m_EditorClassIdentifier: 
+  DataList:
+  - id: 20000
+    name: "\u6D4B\u8BD5\u5237\u65B0\u70B9"
+    refreshR: 800
+    refreshT: 5000
+    randomBoo: 0
+    att: 0300000051c300000400000064000000
+  - id: 20001
+    name: "\u5237\u602A1"
+    refreshR: 800
+    refreshT: 5000
+    randomBoo: 0
+    att: 0300000052c300000500000064000000
+  - id: 20002
+    name: "\u5237\u602A2"
+    refreshR: 800
+    refreshT: 5000
+    randomBoo: 0
+    att: 0300000053c300000600000064000000
+  - id: 20003
+    name: "\u5237\u602A3"
+    refreshR: 800
+    refreshT: 5000
+    randomBoo: 0
+    att: 0300000054c300000700000064000000
+  - id: 20004
+    name: "\u5237\u602A4"
+    refreshR: 800
+    refreshT: 5000
+    randomBoo: 0
+    att: 0300000055c300000800000064000000

@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d15367800574c084ab8da9cd014d2638, type: 3}
+  m_Name: DataTableMonster
+  m_EditorClassIdentifier: 
+  DataList:
+  - id: 50000
+    name: "\u6D4B\u8BD5\u602A\u7269"
+    type: 1
+    nameBoo: 1
+    lv: 1
+    speed: 400
+    hp: 500
+    p_attack: 50
+    m_attack: 50
+    model: 50000
+    hitBR: 80
+    modelScale: 1
+    headIcon: m40001
+    fireS: 3000
+    beFireS: 3001
+    dieS: 3002
+  - id: 50001
+    name: "\u602A\u72692"
+    type: 1
+    nameBoo: 1
+    lv: 2
+    speed: 400
+    hp: 600
+    p_attack: 60
+    m_attack: 60
+    model: 50000
+    hitBR: 80
+    modelScale: 1
+    headIcon: m40002
+    fireS: 3000
+    beFireS: 3001
+    dieS: 3002
+  - id: 50002
+    name: "\u602A\u72693"
+    type: 1
+    nameBoo: 1
+    lv: 3
+    speed: 400
+    hp: 700
+    p_attack: 70
+    m_attack: 70
+    model: 50000
+    hitBR: 80
+    modelScale: 1
+    headIcon: m40003
+    fireS: 3000
+    beFireS: 3001
+    dieS: 3002
+  - id: 50003
+    name: "\u602A\u72694"
+    type: 1
+    nameBoo: 1
+    lv: 4
+    speed: 400
+    hp: 800
+    p_attack: 80
+    m_attack: 80
+    model: 50000
+    hitBR: 80
+    modelScale: 1
+    headIcon: m40004
+    fireS: 3000
+    beFireS: 3001
+    dieS: 3002
+  - id: 50004
+    name: "\u602A\u72695"
+    type: 1
+    nameBoo: 1
+    lv: 5
+    speed: 400
+    hp: 900
+    p_attack: 90
+    m_attack: 90
+    model: 50000
+    hitBR: 80
+    modelScale: 1
+    headIcon: m40005
+    fireS: 3000
+    beFireS: 3001
+    dieS: 3002

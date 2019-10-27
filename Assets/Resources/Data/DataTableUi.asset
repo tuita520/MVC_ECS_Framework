@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab20e6c7b181ac347b609da633e32b72, type: 3}
+  m_Name: DataTableUi
+  m_EditorClassIdentifier: 
+  DataList:
+  - id: 1
+    desc: "\u5F00\u59CB\u754C\u9762"
+    name: MainStarView
+    path: Assets/Resources/UI/Prefabs/Module/MainStarPre
+    holdBoo: 1
+  - id: 2
+    desc: "\u5207\u6362\u573A\u666F\u754C\u9762"
+    name: LoadingView
+    path: Assets/Resources/UI/Prefabs/Module/LoadingPre
+    holdBoo: 1
+  - id: 3
+    desc: "\u4E3B\u754C\u9762"
+    name: MainGameView
+    path: Assets/Resources/UI/Prefabs/Module/MainGamePre
+    holdBoo: 1
+  - id: 4
+    desc: "\u80CC\u5305\u754C\u9762"
+    name: BagView
+    path: Assets/Resources/UI/Prefabs/Module/BagPre
+    holdBoo: 1
+  - id: 5
+    desc: "\u8BBE\u7F6E\u754C\u9762"
+    name: SettingView
+    path: Assets/Resources/UI/Prefabs/Module/SettingPre
+    holdBoo: 0

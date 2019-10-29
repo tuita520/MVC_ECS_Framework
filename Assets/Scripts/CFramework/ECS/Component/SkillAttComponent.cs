@@ -14,7 +14,7 @@ using UnityEngine;
 namespace Zero.ZeroEngine.ECS
 {
 
-    //技能范围
+    //技能范围--------------------------------
     public enum SkillTargetAreaType
     {
         MONOMER = 1,//单体

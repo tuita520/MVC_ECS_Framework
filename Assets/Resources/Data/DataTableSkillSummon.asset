@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b091ebd29fbe8847be6bf333461096f, type: 3}
+  m_Name: DataTableSkillSummon
+  m_EditorClassIdentifier: 
+  DataList:
+  - id: 1
+    acountID: 0
+    triggerRate: 0
+    summonType: 0
+    wayType: 0
+    roleType: 0
+    roleID: 0
+    number: 0
+    radius: 0
+    lifeTime: 0
+    objEffect: 0
+    waitTime: 0
+  - id: 2
+    acountID: 0
+    triggerRate: 0
+    summonType: 0
+    wayType: 0
+    roleType: 0
+    roleID: 0
+    number: 0
+    radius: 0
+    lifeTime: 0
+    objEffect: 0
+    waitTime: 0
+  - id: 3
+    acountID: 0
+    triggerRate: 0
+    summonType: 0
+    wayType: 0
+    roleType: 0
+    roleID: 0
+    number: 0
+    radius: 0
+    lifeTime: 0
+    objEffect: 0
+    waitTime: 0
+  - id: 4
+    acountID: 0
+    triggerRate: 0
+    summonType: 0
+    wayType: 0
+    roleType: 0
+    roleID: 0
+    number: 0
+    radius: 0
+    lifeTime: 0
+    objEffect: 0
+    waitTime: 0
+  - id: 5
+    acountID: 0
+    triggerRate: 0
+    summonType: 0
+    wayType: 0
+    roleType: 0
+    roleID: 0
+    number: 0
+    radius: 0
+    lifeTime: 0
+    objEffect: 0
+    waitTime: 0

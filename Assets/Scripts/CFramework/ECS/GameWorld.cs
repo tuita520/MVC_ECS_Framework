@@ -49,13 +49,15 @@ namespace Zero.ZeroEngine.ECS
         private List<SkillEntity> SkillETRecycleList = new List<SkillEntity>();
         private List<TransferEntity> TransferETRecycleList = new List<TransferEntity>();
 
+        //组件类中，类对象池
+        public ClassObjectPool<BeSkillClass> SkillAttComBeSkillClassPool = new ClassObjectPool<BeSkillClass>(100);//施法者技能属性组件
 
         ////--------组件数量-------目前:17
         //public DDictionary<int, ActionComponent> ActionComDic = new DDictionary<int, ActionComponent>();//
         //public DDictionary<int, AngleComponent> AngleComDic = new DDictionary<int, AngleComponent>();//
         //public DDictionary<int, GameObjectComponent> GameObjectComDic = new DDictionary<int, GameObjectComponent>();//
         //public DDictionary<int, HealthComponent> HealthComDic = new DDictionary<int, HealthComponent>();//
-        
+
         //public DDictionary<int, MonsterBelongComponent> MonsterBelongComDic = new DDictionary<int, MonsterBelongComponent>();//
         //public DDictionary<int, MonsterIDComponent> MonsterIDComDic = new DDictionary<int, MonsterIDComponent>();//
         //public DDictionary<int, NameComponent> NameComDic = new DDictionary<int, NameComponent>();//
@@ -71,7 +73,7 @@ namespace Zero.ZeroEngine.ECS
         //public DDictionary<int, SpeedComponent> SpeedComDic = new DDictionary<int, SpeedComponent>();//
         //public DDictionary<int, TransferAttComponent> TransferIDComDic = new DDictionary<int, TransferAttComponent>();//
         //public DDictionary<int, WeaponComponent> WeaponComDic = new DDictionary<int, WeaponComponent>();//
-        
+
 
         //public void Init(Transform canSceneTrs,Transform canRecycleTrs)
         //{
@@ -114,7 +116,7 @@ namespace Zero.ZeroEngine.ECS
         //    AngleComDic.ApplyDelayCommands();
         //    GameObjectComDic.ApplyDelayCommands();
         //    HealthComDic.ApplyDelayCommands();
-            
+
         //    MonsterBelongComDic.ApplyDelayCommands();
         //    MonsterIDComDic.ApplyDelayCommands();
         //    NameComDic.ApplyDelayCommands();
@@ -131,7 +133,7 @@ namespace Zero.ZeroEngine.ECS
         //    TransferIDComDic.ApplyDelayCommands();
         //    WeaponComDic.ApplyDelayCommands();
 
-            
+
         //}
 
         ///// <summary>
@@ -231,7 +233,7 @@ namespace Zero.ZeroEngine.ECS
         //{
         //    MonsterEntity tempMonsterET = MonsterETClassPool.Spawn(true);
         //    tempMonsterET.guidID = canGuid;
-            
+
         //    tempMonsterET.actionCom.actionName = canActionEnum;
         //    tempMonsterET.actionCom.loopBoo = canActionLoopBoo;
         //    if (canAnimFinishCB != null)
@@ -471,7 +473,7 @@ namespace Zero.ZeroEngine.ECS
         //{
         //    TransferEntity tempTransferET = TransferETClassPool.Spawn(true);
         //    tempTransferET.guidID = canGuid;
-            
+
         //    tempTransferET.nameCom.targetName = canName;
         //    NameComDic.DelayAdd(tempTransferET.guidID, tempTransferET.nameCom);//
         //    tempTransferET.positionCom.positionV = canPosition;

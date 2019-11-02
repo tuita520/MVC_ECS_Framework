@@ -1088,7 +1088,7 @@ public class ExcelWindows :EditorWindow {
                             }
                             else if (dicClientTypes[index[i]] == "array")
                             {
-                                singleField.SetValue(item, Convert.ChangeType(0, typeof(int[])));
+                                singleField.SetValue(item, Convert.ChangeType(new int[0], typeof(int[])));
                             }
                             else if (dicClientTypes[index[i]] == "array1")
                             {

@@ -36,6 +36,7 @@ namespace Zero.ZeroEngine.ECS
         public GameObject parentObj = null;//对象Obj
         public Transform parentObjTrs = null;//对象Trs
         public GameObject cloneObj = null;//读取资源实例化的对象，位于上面节点之下
+        public bool isClearing = false;//是否在清理中
         public int modelID = 0;//模型ID
         public bool isTriggerBoo = true;//是否是触发器
         public Collider selfCollider = null;//触发器或碰撞体
@@ -66,6 +67,7 @@ namespace Zero.ZeroEngine.ECS
                 parentObjTrs.localScale = Vector3.one;
             }
             cloneObj = null;
+            isClearing = false;
             modelID = 0;
             isTriggerBoo = true;
             if(selfCollider != null)
@@ -112,6 +114,7 @@ namespace Zero.ZeroEngine.ECS
             hitLong = 0f;
             hitWidth = 0f;
             hitHeight = 0f;
+        }
     }
-    }
+
 }

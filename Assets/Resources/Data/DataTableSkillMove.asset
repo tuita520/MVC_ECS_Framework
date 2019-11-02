@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41c23a43db2a1f948a2982681f1e276a, type: 3}
+  m_Name: DataTableSkillMove
+  m_EditorClassIdentifier: 
+  DataList:
+  - id: 1
+    acountID: 0
+    triggerRate: 0
+    targetType: 0
+    moveType: 0
+    targetNum: 0
+    moveAngle: 0
+    moveDis: 0
+    moveSpeed: 0
+    moveDamageBoo: 0
+    colliderRadius: 0
+    objEffect: 0
+    waitTime: 0
+  - id: 2
+    acountID: 0
+    triggerRate: 0
+    targetType: 0
+    moveType: 0
+    targetNum: 0
+    moveAngle: 0
+    moveDis: 0
+    moveSpeed: 0
+    moveDamageBoo: 0
+    colliderRadius: 0
+    objEffect: 0
+    waitTime: 0
+  - id: 3
+    acountID: 0
+    triggerRate: 0
+    targetType: 0
+    moveType: 0
+    targetNum: 0
+    moveAngle: 0
+    moveDis: 0
+    moveSpeed: 0
+    moveDamageBoo: 0
+    colliderRadius: 0
+    objEffect: 0
+    waitTime: 0
+  - id: 4
+    acountID: 0
+    triggerRate: 0
+    targetType: 0
+    moveType: 0
+    targetNum: 0
+    moveAngle: 0
+    moveDis: 0
+    moveSpeed: 0
+    moveDamageBoo: 0
+    colliderRadius: 0
+    objEffect: 0
+    waitTime: 0
+  - id: 5
+    acountID: 0
+    triggerRate: 0
+    targetType: 0
+    moveType: 0
+    targetNum: 0
+    moveAngle: 0
+    moveDis: 0
+    moveSpeed: 0
+    moveDamageBoo: 0
+    colliderRadius: 0
+    objEffect: 0
+    waitTime: 0

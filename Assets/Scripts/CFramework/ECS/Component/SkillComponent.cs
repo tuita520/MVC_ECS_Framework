@@ -13,118 +13,110 @@ using UnityEngine;
 
 namespace Zero.ZeroEngine.ECS
 {
-    //技能实体层类型
-    public enum SkillEntityType
+    //技能范围--------------------------------
+    //public enum SkillTargetAreaType
+    //{
+    //    MONOMER = 1,//单体
+    //    ALL = 2,//全体
+    //    POINT = 3,//点名，带数量参数
+    //    SECTOR = 4,//扇形
+    //    RECTANGLE = 5,//矩形
+    //    CIRCLE = 6,//圆形
+    //    POINT_CIRCLE = 7,//机关点圆形
+    //}
+    
+    //发射模块发射类型
+    public enum SkillEmitType
     {
         NULL = 0,//无
-
-        EMIT = 1,//发射
-        //1.直接（奶妈的R）（战士的针对性普攻）
-        //2.跟随（女警的R）（ADC的平A）（奶妈的W）
-        //3.回飞镖（纳尔的回旋镖，但只有一次伤害跟回来路上的二次伤害）
-        //4.反弹
-        //5.反弹不重复
-        //6.范围（卡尔玛的Q）（CS的手雷）
-        //7.自动寻找（闪电链)（暂定熟人的E）（狐狸的W）
-        //8.间隔直接（奥巴马的R）
-        //
-        MOVE = 2,//移动
-        //移动目标类型
-        //  1.自己
-        //  2.目标对象
-        //  3.伤害源（圆形）
-        //
-        //移动类型
-        //  1.自己（回城）
-        //  2.跟随目标对象（三只手的R）
-        //  3.移动到目标对象（梦魇的R）（正义巨像的R）
-        //  4.根据目标对象角度（泰坦的R）
-        //  5.根据施法对象角度（EZ的R）
-        //  6.移动到目标坐标点（石头人的R）（3C牛头的大招）
-        //
-        RANGE = 3,//范围
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-
-        SUMMON = 4,//召唤
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
+        DIRECT = 1,//直接（奶妈的R）（战士的针对性普攻）（金克斯的R）
+        FOLLOW = 2,//跟随（女警的R）（ADC的平A）（奶妈的W）
+        CIRCLE_ROUND = 3,//回飞镖（纳尔的回旋镖，但只有一次伤害跟回来路上的二次伤害）
+        BOUNCE = 4,//反弹
+        BOUNCE_NO_RE = 5,//反弹不重复
+        RANGE = 6,//范围（卡尔玛的Q）（CS的手雷）
+        AUTO_FIND = 7,//自动寻找（闪电链)（暂定熟人的E）（狐狸的W）
+        INTERVAL_DIRECT = 8,//间隔直接（奥巴马的R）
     }
-
-    //技能目标筛选类型
-    public enum SkillTargetType
+    //发射模块角度类型
+    public enum SkillEmitAngleType
     {
-        NULL = 0,//无需目标
+        NULL = 0,//无
+        SELF = 1,//施法者角度
+        TARGET = 2,//目标相对于施法者角度
+    }
+    //移动模块移动目标类型
+    public enum SkillMoveTargetType
+    {
+        NULL = 0,//无
         SELF = 1,//自己
-        SELF_TEAMMATE = 2,//队友包括自己
-        SELF_NO_TEAMMATE = 3,//队友不包括自己
-        FIENDLY = 4,//友方单位
-        ENEMY = 5,//敌方单位
-        ALL = 6,//所有单位
+        TARGET = 2,//目标对象
+        DAMAGE_ROOT = 3,//伤害源（圆形）
     }
-
-    //技能触发方式
-    public enum SkillTriggerType
+    //移动模块移动类型
+    public enum SkillMoveMoveType
     {
-        ACTIVE = 1,//主动
-        ATAACK = 2,//攻击时
-        BE_ATAACK = 3,//被攻击时
-        DIE = 4,//死亡时
-        USE_ITEM = 5,//使用道具时
-        CRASH = 6,//碰撞时
+        NULL = 0,//无
+        SELF = 1,//自己（回城）
+        FOLLOW_TARGET = 2,//跟随目标对象（三只手的R）
+        MOVE_TO_TARGET = 3,//移动到目标对象（梦魇的R）（正义巨像的R）
+        FOR_TARGET_ANGLE = 4,//根据目标对象角度（泰坦的R）
+        SELF_ANGLE = 5,//根据施法对象角度（EZ的R）
+        MOVE_POS = 6,//移动到目标坐标点（石头人的R）（3C牛头的大招）
+        CIRCLE_ROUND = 7,//回旋镖（德莱文的R）（狐狸的Q）
     }
-
-    //瞄准预警类型
-    public enum SkillAimType
+    //范围模块范围类型
+    public enum SkillRangeType
     {
-        RECTANGLE = 1,//矩形（自身锚点）
-        RECTANGLE_MOVE = 2,//位移矩形（自身锚点）
-        ARROW_POINT = 3,//标记箭头（目标锚点）
-        SECTOR_60 = 4,//60°扇形（自身锚点）
-        SECTOR_90 = 5,//90°扇形（自身锚点）
-        SECTOR_120 = 6,//120°扇形（自身锚点）
-        SECTOR_150 = 7,//150°扇形（自身锚点）
-        CIRCLE_HALF = 8,//半圆（自身锚点）
-        CIRCLE_SELF = 9,//圆（自身锚点）
-        CIRCLE_LOCK = 10,//锁定圆（目标锚点）
-        CIRCLE_TARGET = 11,//圆（目标锚点）
+        NULL = 0,//无
+        SELF = 1,//以自己为中心（石头人的E）
+        SELF_CONTINUE = 2,//以自己为中心（持续施法）（风女的R）
+        TARGET = 3,//以目标对象为中心（天使的R）
+        TARGET_CONTINUE = 4,//以目标对象为中心（持续施法）
+        TARGET_POS = 5,//以目标坐标为中心（泽拉斯的R）
+        TARGET_POS_CONTINUE = 6,//以目标坐标为中心（持续施法）（狗头的E）
+        SELF_TARGET_MIDDLE = 7,//以自己到目标坐标之间的偏移点为中心（刀妹的E）
+        SELF_TARGET_MIDDLE_CONTINUE = 8,//以自己到目标坐标之间的偏移点为中心（持续施法）
     }
-
-    //技能施法界面表现类型
-    public enum SkillPreviewType
+    //范围模块形状类型
+    public enum SkillRangeShapeType
     {
-        NOTHING = 0,//无
-        RANGE_SECTOR_60 = 1,//范围60°扇形施法
-        RANGE_SECTOR_90 = 2,//范围90°扇形形施法
-        RANGE_SECTOR_180 = 3,//范围180°扇形形施法
-        RANGE_SECTOR_360 = 4,//范围圆形施法
-        LOCK_RANGE_ATTACK = 5,//锁定目标，地面圆形施法
-        ARROW_SMALL = 6,//窄箭头施法
-        ARROW_BIG = 7,//宽箭头施法
-        P_RANGE_SECTOR_60 = 8,//指向60°扇形施法
-        P_RANGE_SECTOR_90 = 9,//指向90°扇形形施法
-        P_RANGE_SECTOR_180 = 10,//指向180°扇形形施法
-        P_RANGE_SECTOR_90_LOCK = 11,//指向扇形中心线单选(90°)
+        NULL = 0,//无
+        RECTANGLE = 1,//矩形
+        SECTOR = 2,//扇形
+        CIRCLE = 3,//圆形
     }
+    //召唤模块召唤类型
+    public enum SkillSummonType
+    {
+        NULL = 0,//无
+        RETINUE = 1,//随从
+        WILD = 2,//野怪
+    }
+    //召唤模型召唤方式
+    public enum SkillSummonWayType
+    {
+        NULL = 0,//无
+        DIRECT_POS = 1,//在目标坐标直接召唤
+        CIRCLE_CONTINUE = 2,//魔法阵持续召唤
+    }
+    
 
     public class SkillComponent : BaseComponent
     {
-
+        public SkillEntityType skillEntityV = SkillEntityType.NULL;//实体模块
+        public SkillEmitExcel skillEmitData = null;//发射模块
+        public SkillMoveExcel skillMoveData = null;//移动模块
+        public SkillRangeExcel skillRangeData = null;//范围模块
+        public SkillSummonExcel skillSummonData = null;//召唤模块
+        
+        public void Reset()
+        {
+            skillEntityV = SkillEntityType.NULL;
+            skillEmitData = null;
+            skillMoveData = null;
+            skillRangeData = null;
+            skillSummonData = null;
+        }
     }
 }

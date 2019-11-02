@@ -1,0 +1,194 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 472f3f5823aac9a47ba130b514d1e45a, type: 3}
+  m_Name: DataTableActiveSkill
+  m_EditorClassIdentifier: 
+  DataList:
+  - id: 800101
+    index: 1
+    name: "\u6D4B\u8BD5\u666E\u653B"
+    iconID: 800100
+    level: 1
+    lvMax: 20
+    desc: 
+    normalBoo: 1
+    useHP: 0
+    useMP: 0
+    useEP: 0
+    bodyType: 0
+    coolTime: 0
+    upAction: 0
+    singType: 0
+    singAction: 0
+    singTime: 0
+    singEffect: 
+    attackAction: 0
+    attackEffect: 
+    totalTime: 0
+    lockTime: 0
+    delayTime: 0
+    skillEntityType: 1
+    entityID: 800101
+    targetType: 0
+    releaseDis: 0
+    triggerType: 0
+    triggerRate: 0
+    toRoleBoo: 0
+    toNpcBoo: 0
+    aimType: 0
+    aimValue: 
+    viewType: 0
+    viewValue: 
+    skillAudio: 0
+  - id: 800201
+    index: 2
+    name: "\u6D4B\u8BD51\u6280\u80FD"
+    iconID: 800200
+    level: 1
+    lvMax: 20
+    desc: 
+    normalBoo: 0
+    useHP: 0
+    useMP: 0
+    useEP: 0
+    bodyType: 0
+    coolTime: 0
+    upAction: 0
+    singType: 0
+    singAction: 0
+    singTime: 0
+    singEffect: 
+    attackAction: 0
+    attackEffect: 
+    totalTime: 0
+    lockTime: 0
+    delayTime: 0
+    skillEntityType: 1
+    entityID: 800201
+    targetType: 0
+    releaseDis: 0
+    triggerType: 0
+    triggerRate: 0
+    toRoleBoo: 0
+    toNpcBoo: 0
+    aimType: 0
+    aimValue: 
+    viewType: 0
+    viewValue: 
+    skillAudio: 0
+  - id: 800301
+    index: 3
+    name: "\u6D4B\u8BD52\u6280\u80FD"
+    iconID: 800300
+    level: 1
+    lvMax: 20
+    desc: 
+    normalBoo: 0
+    useHP: 0
+    useMP: 0
+    useEP: 0
+    bodyType: 0
+    coolTime: 0
+    upAction: 0
+    singType: 0
+    singAction: 0
+    singTime: 0
+    singEffect: 
+    attackAction: 0
+    attackEffect: 
+    totalTime: 0
+    lockTime: 0
+    delayTime: 0
+    skillEntityType: 2
+    entityID: 800301
+    targetType: 0
+    releaseDis: 0
+    triggerType: 0
+    triggerRate: 0
+    toRoleBoo: 0
+    toNpcBoo: 0
+    aimType: 0
+    aimValue: 
+    viewType: 0
+    viewValue: 
+    skillAudio: 0
+  - id: 800401
+    index: 4
+    name: "\u6D4B\u8BD53\u6280\u80FD"
+    iconID: 800400
+    level: 1
+    lvMax: 20
+    desc: 
+    normalBoo: 0
+    useHP: 0
+    useMP: 0
+    useEP: 0
+    bodyType: 0
+    coolTime: 0
+    upAction: 0
+    singType: 0
+    singAction: 0
+    singTime: 0
+    singEffect: 
+    attackAction: 0
+    attackEffect: 
+    totalTime: 0
+    lockTime: 0
+    delayTime: 0
+    skillEntityType: 3
+    entityID: 800401
+    targetType: 0
+    releaseDis: 0
+    triggerType: 0
+    triggerRate: 0
+    toRoleBoo: 0
+    toNpcBoo: 0
+    aimType: 0
+    aimValue: 
+    viewType: 0
+    viewValue: 
+    skillAudio: 0
+  - id: 800501
+    index: 5
+    name: "\u6D4B\u8BD54\u6280\u80FD"
+    iconID: 800500
+    level: 1
+    lvMax: 20
+    desc: 
+    normalBoo: 0
+    useHP: 0
+    useMP: 0
+    useEP: 0
+    bodyType: 0
+    coolTime: 0
+    upAction: 0
+    singType: 0
+    singAction: 0
+    singTime: 0
+    singEffect: 
+    attackAction: 0
+    attackEffect: 
+    totalTime: 0
+    lockTime: 0
+    delayTime: 0
+    skillEntityType: 4
+    entityID: 800501
+    targetType: 0
+    releaseDis: 0
+    triggerType: 0
+    triggerRate: 0
+    toRoleBoo: 0
+    toNpcBoo: 0
+    aimType: 0
+    aimValue: 
+    viewType: 0
+    viewValue: 
+    skillAudio: 0

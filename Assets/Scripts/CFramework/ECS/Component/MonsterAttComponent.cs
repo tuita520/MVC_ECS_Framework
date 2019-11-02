@@ -17,11 +17,15 @@ namespace Zero.ZeroEngine.ECS
     {
         public int monsterID = 0;//怪物ID
         public int monsterBelongID = 0;//怪物所属刷新点ID
+        public int monsterSummonBoo = 0;//怪物是否属于召唤物
+        public int monsterMasterID = 0;//怪物主人
 
         public void Reset()
         {
             monsterID = 0;
             monsterBelongID = 0;
-        }
+            monsterSummonBoo = 0;
+            monsterMasterID = 0;
+    }
     }
 }
